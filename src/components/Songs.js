@@ -5,9 +5,9 @@ const Songs = (props) => {
     const songs = props.songs.map((song) => {
         return (
             <Song
-                title={props.title}
-                imgUrl={props.url}
-                key={props.title}
+                title={song.title}
+                imgUrl={song.url}
+                key={song.title}
             />
         )
       })
