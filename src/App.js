@@ -2,7 +2,15 @@ import React from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom'
 import './App.css';
 import About from './components/About'
+import Songs from './components/Songs'
 
+const Home = (props) => {
+  return (
+    <div>
+      {props.title}
+    </div>
+  )
+}
 
 function App() {
   return (
