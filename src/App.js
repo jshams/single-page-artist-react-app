@@ -1,13 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
 import { BrowserRouter, Route, Link } from 'react-router-dom'
 import './App.css';
+import About from './components/About'
+
 
 function App() {
   return (
     <BrowserRouter>
       <div>
-        <ul>
+        <ul className="navbar">
           <li>
             <Link to="/">Home</Link>
           </li>
