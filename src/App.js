@@ -4,6 +4,7 @@ import './App.css';
 import About from './components/About'
 import Songs from './components/Songs'
 import Events from './components/Events'
+import Contact from './components/Contact'
 
 const Home = (props) => {
   return (
