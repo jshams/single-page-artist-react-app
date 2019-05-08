@@ -40,8 +40,8 @@ function App() {
 
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
-        <Route path="/songs" component={Songs} />
-        <Route path="/events" component={Events} />
+        <Route path="/songs" render={() => <Songs songs={[]} />} />
+        <Route path="/events" render={() => <Events events={[]} />} />
         <Route path="/contact" component={Contact} />
       </div>
     </BrowserRouter>
