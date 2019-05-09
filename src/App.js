@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom'
 import './App.css';
-import About from './components/About'
-import Songs from './components/Songs'
-import Events from './components/Events'
-import Contact from './components/Contact'
+import About from './components/about/About'
+import Songs from './components/song/Songs'
+import Events from './components/event/Events'
+import Contact from './components/contact/Contact'
 
 const Home = (props) => {
   return (
@@ -13,6 +13,8 @@ const Home = (props) => {
     </div>
   )
 }
+
+const songs = [{title: "Song1"}, {title: "Song2"}, {title: "Song3"}, {title: "Song4"}]
 
 function App() {
   return (
@@ -40,7 +42,7 @@ function App() {
 
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
-        <Route path="/songs" render={() => <Songs songs={[]} />} />
+        <Route path="/songs" render={() => <Songs songs={songs} />} />
         <Route path="/events" render={() => <Events events={[]} />} />
         <Route path="/contact" component={Contact} />
       </div>
