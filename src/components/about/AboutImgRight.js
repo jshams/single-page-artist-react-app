@@ -8,7 +8,7 @@ const AboutImgRight = (props) => {
             <div className="text-left">
                 {props.text}
             </div>
-            <img src={props.imgLink} alt={props.heading} className="img-right" />
+            <img src={props.img} alt={props.heading} className="img-right" />
         </div>
     )
 }
