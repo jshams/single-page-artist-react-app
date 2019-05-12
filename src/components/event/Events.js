@@ -6,8 +6,8 @@ const Events = (props) => {
     const events = props.events.map((event) => {
         return (
             <Event
-                date={props.date}
-                location={props.location}
+                date={event.date}
+                location={event.location}
             />
         )
       })
