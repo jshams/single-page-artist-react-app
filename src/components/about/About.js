@@ -11,7 +11,7 @@ import './About.css'
 //             img: "https://facebook.com" }
 
 const About = (props) => {
-    const abouts = props.section.map((section, i) => {
+    const abouts = props.abouts.map((section, i) => {
         if (i % 3 === 0) {
             return (
                 <AboutImgRight
@@ -30,7 +30,7 @@ const About = (props) => {
                 <AboutNoImg
                 background = {section.background}
                 heading = {section.heading}
-                text = {section.test}
+                text = {section.text}
                 />
                 )
         }
