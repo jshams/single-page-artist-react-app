@@ -3,7 +3,8 @@ import React from 'react'
 const Contact = (props) => {
     return (
         <div>
-            <a className="email" href={'mailto:' + props.email}>{props.name}</a>
+            <p className="name">{props.contact.name}</p>
+            <a className="email" href={'mailto:' + props.contact.email}>{props.contact.email}</a>
         </div>
     )
 }
