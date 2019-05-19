@@ -1,0 +1,17 @@
+.header {
+    font-size: 2em;
+    font-family: sans-serif;
+    margin-left: 10px;
+}
+
+.content {
+    display: flex;
+}
+
+.content-right {
+    flex-direction: row-reverse;
+}
+
+.content-left {
+    flex-direction: row
+}
