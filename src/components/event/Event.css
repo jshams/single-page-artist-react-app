@@ -1,0 +1,22 @@
+body {
+    background-color: black;
+}
+
+.event {
+    display: flex;
+    flex-direction: row;
+    align-items: space-around;
+}
+
+.date {
+    color: white;
+}
+
+.location {
+    color: white;
+}
+
+.btn-right {
+    background-color: white;
+    color: black
+}
